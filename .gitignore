@@ -1,0 +1,10 @@
+# Local operating-system files
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# Keep release binaries as GitHub Release assets, not source-archive files.
+*.zip
+*.vst3/
+*.component/
+*.aaxplugin/
