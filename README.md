@@ -1,17 +1,16 @@
 # Gateway OS
 
-Private release-candidate page for Gateway OS V1.0.0.
+Binary release page for Gateway OS V1.0.0.
 
-> This repository is private until SlamminMofo explicitly approves a public release. It is intended to contain only release-facing material and binary downloads, not the plugin source code.
+This repository contains only release-facing material and binary downloads, not the plugin source code.
 
 ![Gateway OS GUI](docs/assets/GatewayOS_GUI.jpg)
 
 ## Status
 
-- Release type: Private release candidate
+- Release type: Public binary release
 - Version: 1.0.0
 - Source code: Not included
-- Public release: Not approved yet
 
 ## Downloads
 
@@ -21,9 +20,9 @@ The V1.0.0 release candidate provides:
 - macOS AU
 - macOS VST3
 
-Downloads are attached to the private draft release:
+Downloads are attached to the V1.0.0 release:
 
-[Gateway OS V1.0.0 Release Candidate](https://github.com/SlamminMofo/GatewayOS-Releases/releases/tag/v1.0.0-rc1)
+[Gateway OS V1.0.0](https://github.com/SlamminMofo/GatewayOS-Releases/releases/tag/v1.0.0)
 
 ## Highlights
 
@@ -61,7 +60,3 @@ macOS:
 - Copy `Gateway OS V1.0.0.component` to `~/Library/Audio/Plug-Ins/Components/`
 - Copy `Gateway OS V1.0.0.vst3` to `~/Library/Audio/Plug-Ins/VST3/`
 - Rescan plugins in the DAW.
-
-## Release Gate
-
-Do not make this repository or its release public until SlamminMofo explicitly approves publication.
