@@ -6,6 +6,8 @@ Public binary hotfix release for Gateway OS.
 
 ![Gateway OS settings menu](https://github.com/SlamminMofo/GatewayOS-Releases/raw/main/docs/assets/GatewayOS_GUI_Menu.jpg)
 
+> Superseded for macOS users by Gateway OS V1.0.3.
+
 ## Status
 
 - Release type: Public binary hotfix
