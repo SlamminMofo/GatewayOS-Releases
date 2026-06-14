@@ -4,6 +4,10 @@ Public binary release notes for Gateway OS V1.0.0.
 
 ![Gateway OS GUI](https://github.com/SlamminMofo/GatewayOS-Releases/raw/main/docs/assets/GatewayOS_GUI.jpg)
 
+![Gateway OS settings menu](https://github.com/SlamminMofo/GatewayOS-Releases/raw/main/docs/assets/GatewayOS_GUI_Menu.jpg)
+
+> Superseded for macOS users by Gateway OS V1.0.2.
+
 ## Status
 
 - Release type: Public binary release

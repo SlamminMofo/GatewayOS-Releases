@@ -4,6 +4,8 @@ Public binary hotfix release for Gateway OS.
 
 ![Gateway OS GUI](https://github.com/SlamminMofo/GatewayOS-Releases/raw/main/docs/assets/GatewayOS_GUI.jpg)
 
+![Gateway OS settings menu](https://github.com/SlamminMofo/GatewayOS-Releases/raw/main/docs/assets/GatewayOS_GUI_Menu.jpg)
+
 ## Status
 
 - Release type: Public binary hotfix
@@ -30,6 +32,19 @@ Public binary hotfix release for Gateway OS.
 - Main-window OS/MC status readout.
 - Theme-color selector with compact dot palette.
 - EQ, noise gate, slim, input calibration, IR loading, and pre/post EQ routing included.
+
+## Research Background
+
+- R. E. Crochiere and L. R. Rabiner, "Interpolation and Decimation of Digital Signals: A Tutorial Review", Proceedings of the IEEE, 1981. https://doi.org/10.1109/PROC.1981.11969
+- P. P. Vaidyanathan, "Multirate Digital Filters, Filter Banks, Polyphase Networks, and Applications: A Tutorial", Proceedings of the IEEE, 1990. https://ieeexplore.ieee.org/document/52200
+- J. O. Smith and P. Gossett, "A Flexible Sampling-Rate Conversion Method", ICASSP 1984. https://ccrma.stanford.edu/~jos/resample/
+- Z. Cvetkovic and M. Vetterli, "Oversampled Filter Banks", IEEE Transactions on Signal Processing, 1998. https://doi.org/10.1109/78.668721
+- J. D. Parker, V. Zavalishin, and E. Le Bivic, "Reducing the Aliasing of Nonlinear Waveshaping Using Continuous-Time Convolution", DAFx-16, 2016. https://www.dafx.de/paper-archive/2016/dafxpapers/20-DAFx-16_paper_27-PN.pdf
+- A. Carson, V. Valimaki, A. Wright, and S. Bilbao, "Resampling Filter Design for Multirate Neural Audio Effect Processing", 2025. https://arxiv.org/abs/2501.18470
+- R. Sato and J. O. Smith III, "Aliasing Reduction in Neural Amp Modeling by Smoothing Activations", 2025. https://arxiv.org/abs/2505.04082
+- A. Carson, A. Wright, and S. Bilbao, "Anti-aliasing of Neural Distortion Effects via Model Fine Tuning", 2025. https://arxiv.org/abs/2505.11375
+- A. Carson, A. Wright, J. Chowdhury, V. Valimaki, and S. Bilbao, "Sample Rate Independent Recurrent Neural Networks for Audio Effects Processing", 2024. https://arxiv.org/abs/2406.06293
+- R. Yoneyama, A. Miyashita, R. Yamamoto, and T. Toda, "Wavehax: Aliasing-Free Neural Waveform Synthesis Based on 2D Convolution and Harmonic Prior for Reliable Complex Spectrogram Estimation", 2024. https://arxiv.org/abs/2411.06807
 
 ## Install Notes
 

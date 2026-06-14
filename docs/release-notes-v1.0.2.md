@@ -1,44 +1,29 @@
-# Gateway OS
+# Gateway OS V1.0.2
 
-Binary release page for Gateway OS V1.0.2.
+Public binary hotfix release for Gateway OS.
 
-This repository contains only release-facing material and binary downloads, not the plugin source code.
+![Gateway OS GUI](https://github.com/SlamminMofo/GatewayOS-Releases/raw/main/docs/assets/GatewayOS_GUI.jpg)
 
-![Gateway OS GUI](docs/assets/GatewayOS_GUI.jpg)
-
-![Gateway OS settings menu](docs/assets/GatewayOS_GUI_Menu.jpg)
+![Gateway OS settings menu](https://github.com/SlamminMofo/GatewayOS-Releases/raw/main/docs/assets/GatewayOS_GUI_Menu.jpg)
 
 ## Status
 
-- Release type: Public binary release
+- Release type: Public binary hotfix
 - Version: 1.0.2
-- Source code: Not included
-
-## Downloads
-
-The current Gateway OS release provides:
-
-- Windows VST3 x64
-- macOS AU
-- macOS VST3
-
-Downloads are attached to the V1.0.2 release:
-
-[Gateway OS V1.0.2](https://github.com/SlamminMofo/GatewayOS-Releases/releases/tag/v1.0.2)
+- Source code: Not included in this release repository
+- Included artifacts:
+  - Windows VST3 x64
+  - macOS AU
+  - macOS VST3
 
 ## V1.0.2 macOS Hotfix
 
 - Addresses a reported macOS `auval` freeze at `VERIFYING CUSTOM UI`.
+- Keeps the AU identity fixed as `aufx` / `G100` / `SMfo`.
 - Runs AUv2 custom UI creation through AppKit's main thread.
 - Switches the macOS IGraphics backend from NanoVG/Metal to NanoVG/OpenGL2 for broader AU host compatibility.
 - Keeps WaveNet oversampling, multicore processing, parameter layout, and DSP behavior unchanged from V1.0.1.
-
-## V1.0.1 macOS Hotfix
-
-- Corrects the AU AudioComponents identity so macOS hosts see `SlamminMofo: Gateway OS` instead of inherited NeuralAmpModeler metadata.
-- Adds Apple `auval` validation for `aufx / G100 / SMfo`.
-- Ad-hoc signs the staged macOS AU and VST3 bundles before release packaging.
-- Keeps the same Gateway OS DSP, oversampling, multicore, and GUI source used for the Windows VST3 build.
+- Keeps Apple `auval -v aufx G100 SMfo` validation in the macOS build workflow.
 
 ## Highlights
 
@@ -49,9 +34,7 @@ Downloads are attached to the V1.0.2 release:
 - Theme-color selector with compact dot palette.
 - EQ, noise gate, slim, input calibration, IR loading, and pre/post EQ routing included.
 
-## Oversampling Research Background
-
-The Gateway OS oversampling work is informed by standard multirate DSP, polyphase/filter-bank theory, high-quality sample-rate conversion, nonlinear-audio aliasing literature, and recent neural-audio research:
+## Research Background
 
 - R. E. Crochiere and L. R. Rabiner, "Interpolation and Decimation of Digital Signals: A Tutorial Review", Proceedings of the IEEE, 1981. https://doi.org/10.1109/PROC.1981.11969
 - P. P. Vaidyanathan, "Multirate Digital Filters, Filter Banks, Polyphase Networks, and Applications: A Tutorial", Proceedings of the IEEE, 1990. https://ieeexplore.ieee.org/document/52200
@@ -73,6 +56,9 @@ Windows:
 
 macOS:
 
+- Remove older `Gateway OS V1.0.0.component`, `Gateway OS V1.0.1.component`, `Gateway OS V1.0.0.vst3`, and `Gateway OS V1.0.1.vst3` bundles if installed.
 - Copy `Gateway OS V1.0.2.component` to `~/Library/Audio/Plug-Ins/Components/`
 - Copy `Gateway OS V1.0.2.vst3` to `~/Library/Audio/Plug-Ins/VST3/`
 - Rescan plugins in the DAW.
+
+If a macOS host cached the old AU metadata or UI state, reboot or clear the host/plugin cache before rescanning.
