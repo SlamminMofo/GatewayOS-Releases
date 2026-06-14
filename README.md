@@ -1,6 +1,6 @@
 # Gateway OS
 
-Binary release page for Gateway OS V1.0.0.
+Binary release page for Gateway OS V1.0.1.
 
 This repository contains only release-facing material and binary downloads, not the plugin source code.
 
@@ -9,20 +9,27 @@ This repository contains only release-facing material and binary downloads, not 
 ## Status
 
 - Release type: Public binary release
-- Version: 1.0.0
+- Version: 1.0.1
 - Source code: Not included
 
 ## Downloads
 
-The V1.0.0 release candidate provides:
+The current Gateway OS release provides:
 
 - Windows VST3 x64
 - macOS AU
 - macOS VST3
 
-Downloads are attached to the V1.0.0 release:
+Downloads are attached to the V1.0.1 release:
 
-[Gateway OS V1.0.0](https://github.com/SlamminMofo/GatewayOS-Releases/releases/tag/v1.0.0)
+[Gateway OS V1.0.1](https://github.com/SlamminMofo/GatewayOS-Releases/releases/tag/v1.0.1)
+
+## V1.0.1 macOS Hotfix
+
+- Corrects the AU AudioComponents identity so macOS hosts see `SlamminMofo: Gateway OS` instead of inherited NeuralAmpModeler metadata.
+- Adds Apple `auval` validation for `aufx / G100 / SMfo`.
+- Ad-hoc signs the staged macOS AU and VST3 bundles before release packaging.
+- Keeps the same Gateway OS DSP, oversampling, multicore, and GUI source used for the Windows VST3 build.
 
 ## Highlights
 
